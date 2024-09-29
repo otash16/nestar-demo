@@ -1,10 +1,10 @@
-import { Box, Stack } from "@mui/material";
-import { useState } from "react";
+import { Box, Pagination, Stack } from "@mui/material";
+import React, { useState } from "react";
 import WestIcon from "@mui/icons-material/West";
 import EastIcon from "@mui/icons-material/East";
 import { Swiper, SwiperSlide } from "swiper/react";
-import property from "@/pages/property";
 import TrendPropertyCard from "./TrendPropertyCard";
+import { Navigation } from "@mui/icons-material";
 
 const TrendProperties = () => {
   const [trendProperties, setTrendProperties] = useState<number[]>([
@@ -59,3 +59,5 @@ const TrendProperties = () => {
 };
 
 export default TrendProperties;
+
+// import { Navigation, Pagination } from "swiper";
